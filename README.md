@@ -1,32 +1,37 @@
-# React + TypeScript + Vite
+# SAT Error Bank
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+An offline-first SAT mistake tracking app.
 
-Currently, two official plugins are available:
+## Why?
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Most SAT students solve hundreds of questions but fail to systematically learn from mistakes.
 
-## React Compiler
+SAT Error Bank helps students:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Record wrong answers
+- Understand why they failed
+- Track recurring mistakes
+- Export mistakes into AI-generated Anki flashcards
 
-## Expanding the Oxlint configuration
+## Features
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+- Offline-first PWA
+- Local data storage
+- Mistake categorization
+- Search and filtering
+- Review mode
+- AI export workflow
+- Backup and restore
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+## Tech Stack
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+- React
+- TypeScript
+- Tailwind CSS
+- IndexedDB
+- PWA
+
+## Privacy
+
+All data stays locally on the user's device.
+No account required.
